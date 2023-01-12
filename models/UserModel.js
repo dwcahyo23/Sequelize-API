@@ -15,10 +15,10 @@ const UserModel = db.define('User', {
     // set(data) {
     //   this.setDataValue(JSON.stringify(data));
     // },
-    // get() {
-    //   const rawValue = this.getDataValue('data');
-    //   return JSON.parse(rawValue);
-    // },
+    get() {
+      const rawValue = this.getDataValue('data');
+      return JSON.parse(rawValue);
+    },
   },
 });
 
